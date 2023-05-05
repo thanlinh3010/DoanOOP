@@ -132,37 +132,13 @@ public class board extends JPanel implements ActionListener {
         frame.setResizable(false);
         /*frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOS E);*/
     }
-    /**/
-    JLabel lb1 = new JLabel("Tọa độ: ");
-    JLabel lb2 = new JLabel("Tọa độ : ");
-
-    /**/
-    //tim o trong de set text
     public void actionPerformed(ActionEvent e) {
-        /**/
-        if (COUNT == 0) {
-            panelEast.add(lb1);
-            lb1.setLocation(100, 100);
-            panelWest.add(lb2);
-            lb2.setLocation(100, 100);
-        } else {
-            panelEast.remove(lb1);
-            panelWest.remove(lb2);
-            panelEast.add(lb1);
-            lb1.setLocation(100, 100);
-            panelWest.add(lb2);
-            lb2.setLocation(100, 100);
-        }
-        COUNT = 1;
         /**/
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (e.getSource() == btn[i][j] && btn[i][j].getText() != "X" && btn[i][j].getText() != "O") {
                     if (diem % 2 == 0) {
-                        /**/
-                        lb1.setText("Tọa độ : (" + i + ", " + j + ")");
-                        /**/
                         btn[i][j].setText("X");
                         btn[i][j].setForeground(Color.RED);
                         diem++;
@@ -177,9 +153,6 @@ public class board extends JPanel implements ActionListener {
                             }
                         }
                     } else {
-                        /**/
-                        lb2.setText("Tọa độ : (" + i + ", " + j + ")");
-                        /**/
                         btn[i][j].setText("O");
                         btn[i][j].setForeground(Color.BLACK);
                         diem++;
