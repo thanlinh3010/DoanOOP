@@ -1,10 +1,12 @@
-package VIEW;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
+package VIEW;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 
 import java.awt.*;
 import java.awt.event.*;
@@ -45,6 +47,7 @@ public class board extends JPanel implements ActionListener {
         panelNorth.add(lbTime);
 
         JLabel lbPlayer1 = new JLabel("Player1");
+        JLabel lbImagePlayer1 = new JLabel();
         JLabel lbName1 = new JLabel("Steps : ");
         JLabel lbTime1 = new JLabel("Time Thinhking : ");
 
@@ -84,8 +87,8 @@ public class board extends JPanel implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 JOptionPane.showMessageDialog(null, "-	Cách chơi: \n"
-                        + "Trò chơi được chơi trên bàn cờ có 324 ô, với 18 dòng và 18 cột.\n"
-                        + " Người chiến thắng là người tạo được đường thẳng theo chiều dọc\n"
+                        + "Trò chơi được chơi trên bàn cờ có 324 ô, với 18 dòng và 18 cột."
+                        + " Người chiến thắng là người tạo được đường thẳng theo chiều dọc"
                         + " hoặc ngang hoặc chéo với chính xác 5 con cờ của mình.", "Thoát", JOptionPane.INFORMATION_MESSAGE);
             }
         });
@@ -127,14 +130,39 @@ public class board extends JPanel implements ActionListener {
         panelWest.setSize(50, 9000);
         frame.setSize(1500, 700);
         frame.setResizable(false);
+        /*frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOS E);*/
     }
+    /**/
+    JLabel lb1 = new JLabel("Tọa độ: ");
+    JLabel lb2 = new JLabel("Tọa độ : ");
+
+    /**/
     //tim o trong de set text
     public void actionPerformed(ActionEvent e) {
+        /**/
+        if (COUNT == 0) {
+            panelEast.add(lb1);
+            lb1.setLocation(100, 100);
+            panelWest.add(lb2);
+            lb2.setLocation(100, 100);
+        } else {
+            panelEast.remove(lb1);
+            panelWest.remove(lb2);
+            panelEast.add(lb1);
+            lb1.setLocation(100, 100);
+            panelWest.add(lb2);
+            lb2.setLocation(100, 100);
+        }
+        COUNT = 1;
+        /**/
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (e.getSource() == btn[i][j] && btn[i][j].getText() != "X" && btn[i][j].getText() != "O") {
                     if (diem % 2 == 0) {
+                        /**/
+                        lb1.setText("Tọa độ : (" + i + ", " + j + ")");
+                        /**/
                         btn[i][j].setText("X");
                         btn[i][j].setForeground(Color.RED);
                         diem++;
@@ -149,6 +177,9 @@ public class board extends JPanel implements ActionListener {
                             }
                         }
                     } else {
+                        /**/
+                        lb2.setText("Tọa độ : (" + i + ", " + j + ")");
+                        /**/
                         btn[i][j].setText("O");
                         btn[i][j].setForeground(Color.BLACK);
                         diem++;
@@ -164,6 +195,7 @@ public class board extends JPanel implements ActionListener {
                             }
                         }
                     }
+//                JOptionPane.showMessageDialog(this, i + " " + j);
                 }
 
             }
