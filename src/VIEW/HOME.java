@@ -74,7 +74,7 @@ public class HOME extends javax.swing.JFrame {
 
         jButton5.setText("jButton5");
 
-        hinhnen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/hình nền.png"))); // NOI18N
+        hinhnen.setIcon(new javax.swing.ImageIcon(getClass().getResource("src/img/hình nền.png")));
 
         jMenu1.setText("TRANG CHỦ");
 
