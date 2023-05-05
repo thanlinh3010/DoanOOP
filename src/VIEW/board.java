@@ -87,8 +87,8 @@ public class board extends JPanel implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 JOptionPane.showMessageDialog(null, "-	Cách chơi: \n"
-                        + "Trò chơi được chơi trên bàn cờ có 324 ô, với 18 dòng và 18 cột."
-                        + " Người chiến thắng là người tạo được đường thẳng theo chiều dọc"
+                        + "Trò chơi được chơi trên bàn cờ có 324 ô, với 18 dòng và 18 cột.\n"
+                        + " Người chiến thắng là người tạo được đường thẳng theo chiều dọc\n"
                         + " hoặc ngang hoặc chéo với chính xác 5 con cờ của mình.", "Thoát", JOptionPane.INFORMATION_MESSAGE);
             }
         });
