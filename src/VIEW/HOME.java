@@ -74,7 +74,7 @@ public class HOME extends javax.swing.JFrame {
 
         jButton5.setText("jButton5");
 
-        hinhnen.setIcon(new javax.swing.ImageIcon(getClass().getResource("src/img/hình nền.png")));
+        hinhnen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/hình nền.png"))); // NOI18N
 
         jMenu1.setText("TRANG CHỦ");
 
@@ -142,8 +142,8 @@ public class HOME extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(hinhnen, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+                .addContainerGap(481, Short.MAX_VALUE))
+            .addComponent(hinhnen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,7 +151,7 @@ public class HOME extends javax.swing.JFrame {
                 .addComponent(hinhnen, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap())
+                .addGap(534, 534, 534))
         );
 
         pack();
