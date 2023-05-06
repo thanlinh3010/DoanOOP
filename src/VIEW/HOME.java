@@ -149,7 +149,7 @@ public class HOME extends javax.swing.JFrame {
                 .addComponent(hinhnen, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(534, 534, 534))
+                .addGap(16, 16, 16))
         );
 
         pack();
