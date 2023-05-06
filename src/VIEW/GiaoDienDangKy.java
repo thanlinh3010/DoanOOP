@@ -69,6 +69,8 @@ public class GiaoDienDangKy extends javax.swing.JFrame {
         jTextField1.setToolTipText("");
         jTextField1.setName("txttaikhoan"); // NOI18N
 
+        jPasswordField1.setName("txtmatkhau"); // NOI18N
+
         jLabel5.setText("Avatar");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "..." }));

@@ -3,8 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package VIEW;
-
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
@@ -43,18 +41,18 @@ public class HOME extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         hinhnen = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        txtchoinhanh = new javax.swing.JMenu();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
+        txtchoivoimay = new javax.swing.JRadioButtonMenuItem();
+        txtbangxephang = new javax.swing.JRadioButtonMenuItem();
         txtgioithieu = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem4 = new javax.swing.JRadioButtonMenuItem();
+        txtdangxuat = new javax.swing.JRadioButtonMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        txtNickname = new javax.swing.JMenuItem();
+        txtsovandachoi = new javax.swing.JMenuItem();
+        txtsovanthang = new javax.swing.JMenuItem();
+        txtdiem = new javax.swing.JMenuItem();
+        txtxephang = new javax.swing.JMenuItem();
 
         jMenu3.setText("File");
         jMenuBar2.add(jMenu3);
@@ -76,19 +74,19 @@ public class HOME extends javax.swing.JFrame {
 
         hinhnen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/hình nền.png"))); // NOI18N
 
-        jMenu1.setText("TRANG CHỦ");
+        txtchoinhanh.setText("TRANG CHỦ");
 
         jRadioButtonMenuItem1.setSelected(true);
         jRadioButtonMenuItem1.setText("Chơi nhanh");
-        jMenu1.add(jRadioButtonMenuItem1);
+        txtchoinhanh.add(jRadioButtonMenuItem1);
 
-        jRadioButtonMenuItem2.setSelected(true);
-        jRadioButtonMenuItem2.setText("Chơi với máy");
-        jMenu1.add(jRadioButtonMenuItem2);
+        txtchoivoimay.setSelected(true);
+        txtchoivoimay.setText("Chơi với máy");
+        txtchoinhanh.add(txtchoivoimay);
 
-        jRadioButtonMenuItem3.setSelected(true);
-        jRadioButtonMenuItem3.setText("Bảng xếp hạng");
-        jMenu1.add(jRadioButtonMenuItem3);
+        txtbangxephang.setSelected(true);
+        txtbangxephang.setText("Bảng xếp hạng");
+        txtchoinhanh.add(txtbangxephang);
 
         txtgioithieu.setSelected(true);
         txtgioithieu.setText("Giới thiệu");
@@ -101,35 +99,35 @@ public class HOME extends javax.swing.JFrame {
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
             }
         });
-        jMenu1.add(txtgioithieu);
+        txtchoinhanh.add(txtgioithieu);
 
-        jRadioButtonMenuItem4.setSelected(true);
-        jRadioButtonMenuItem4.setText("Đăng xuất");
-        jMenu1.add(jRadioButtonMenuItem4);
+        txtdangxuat.setSelected(true);
+        txtdangxuat.setText("Đăng xuất");
+        txtchoinhanh.add(txtdangxuat);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(txtchoinhanh);
 
         jMenu2.setText("THÔNG TIN NGƯỜI CHƠI");
 
-        jMenuItem1.setText("Nickname");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        txtNickname.setText("Nickname");
+        txtNickname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                txtNicknameActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem1);
+        jMenu2.add(txtNickname);
 
-        jMenuItem2.setText("Số ván đã chơi");
-        jMenu2.add(jMenuItem2);
+        txtsovandachoi.setText("Số ván đã chơi");
+        jMenu2.add(txtsovandachoi);
 
-        jMenuItem3.setText("Số ván thắng");
-        jMenu2.add(jMenuItem3);
+        txtsovanthang.setText("Số ván thắng");
+        jMenu2.add(txtsovanthang);
 
-        jMenuItem4.setText("Điểm");
-        jMenu2.add(jMenuItem4);
+        txtdiem.setText("Điểm");
+        jMenu2.add(txtdiem);
 
-        jMenuItem5.setText("Xếp hạng");
-        jMenu2.add(jMenuItem5);
+        txtxephang.setText("Xếp hạng");
+        jMenu2.add(txtxephang);
 
         jMenuBar1.add(jMenu2);
 
@@ -142,8 +140,8 @@ public class HOME extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(hinhnen, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+                .addContainerGap(481, Short.MAX_VALUE))
+            .addComponent(hinhnen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,15 +149,15 @@ public class HOME extends javax.swing.JFrame {
                 .addComponent(hinhnen, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap())
+                .addGap(534, 534, 534))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void txtNicknameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNicknameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_txtNicknameActionPerformed
 
     private void txtgioithieuAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_txtgioithieuAncestorAdded
          txtgioithieu.addActionListener((ActionEvent e) -> {
@@ -219,22 +217,22 @@ public class HOME extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem4;
+    private javax.swing.JMenuItem txtNickname;
+    private javax.swing.JRadioButtonMenuItem txtbangxephang;
+    private javax.swing.JMenu txtchoinhanh;
+    private javax.swing.JRadioButtonMenuItem txtchoivoimay;
+    private javax.swing.JRadioButtonMenuItem txtdangxuat;
+    private javax.swing.JMenuItem txtdiem;
     private javax.swing.JRadioButtonMenuItem txtgioithieu;
+    private javax.swing.JMenuItem txtsovandachoi;
+    private javax.swing.JMenuItem txtsovanthang;
+    private javax.swing.JMenuItem txtxephang;
     // End of variables declaration//GEN-END:variables
 }
