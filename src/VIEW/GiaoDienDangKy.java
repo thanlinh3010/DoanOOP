@@ -4,9 +4,6 @@
  */
 package VIEW;
 
-import java.sql.SQLException;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Admin
