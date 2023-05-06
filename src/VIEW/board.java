@@ -47,7 +47,6 @@ public class board extends JPanel implements ActionListener {
         panelNorth.add(lbTime);
 
         JLabel lbPlayer1 = new JLabel("Player1");
-        JLabel lbImagePlayer1 = new JLabel();
         JLabel lbName1 = new JLabel("Steps : ");
         JLabel lbTime1 = new JLabel("Time Thinhking : ");
 

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package VIEW;
-/**import javax.swing.JOptionPane;
+/**import java.swing.JOptionPane;
  *
  * @author Admin
  */
