@@ -18,7 +18,7 @@ public class DoAnnhom {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String url="jdbc:mysql://localhost:3306";
+        String url="jdbc:mysql://localhost:3306/caronhom5";
         var user ="root";
         var password="";       
         try( Connection conn = DriverManager.getConnection(url,user,password)){
