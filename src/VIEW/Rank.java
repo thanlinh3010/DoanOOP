@@ -39,7 +39,6 @@ public class Rank extends javax.swing.JFrame {
         lbten.setText("Xếp hạng");
 
         Bangxephang.setBackground(new java.awt.Color(255, 153, 153));
-        Bangxephang.setBorder(null);
         Bangxephang.setForeground(new java.awt.Color(255, 255, 255));
         Bangxephang.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
