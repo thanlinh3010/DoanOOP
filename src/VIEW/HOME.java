@@ -39,7 +39,6 @@ public class HOME extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        hinhnen = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         txtchoinhanh = new javax.swing.JMenu();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
@@ -71,8 +70,6 @@ public class HOME extends javax.swing.JFrame {
         jButton4.setText("jButton4");
 
         jButton5.setText("jButton5");
-
-        hinhnen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/hình nền.png"))); // NOI18N
 
         txtchoinhanh.setText("TRANG CHỦ");
 
@@ -140,16 +137,14 @@ public class HOME extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(481, Short.MAX_VALUE))
-            .addComponent(hinhnen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(532, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(hinhnen, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(12, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(16, 16, 16))
+                .addGap(534, 534, 534))
         );
 
         pack();
@@ -210,7 +205,6 @@ public class HOME extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel hinhnen;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
