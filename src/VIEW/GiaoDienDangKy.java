@@ -4,6 +4,8 @@
  */
 package VIEW;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Admin
@@ -60,11 +62,11 @@ public class GiaoDienDangKy extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setText("Tài Khoản");
+        jLabel2.setText("Tên đăng nhập :");
 
-        jLabel3.setText("Nickname");
+        jLabel3.setText("Nickname :");
 
-        jLabel4.setText("Mật Khẩu");
+        jLabel4.setText("Mật Khẩu :");
 
         jTextField1.setToolTipText("");
         jTextField1.setName("txttaikhoan"); // NOI18N
@@ -81,6 +83,11 @@ public class GiaoDienDangKy extends javax.swing.JFrame {
         });
 
         txtdangky.setText("Đăng Ký");
+        txtdangky.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdangkyActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,12 +100,16 @@ public class GiaoDienDangKy extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(46, 46, 46))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(33, 33, 33)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(jTextField1)
@@ -142,6 +153,28 @@ public class GiaoDienDangKy extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
                  // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void txtdangkyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdangkyActionPerformed
+        String USERNAME=jLabel2.getText();
+        String PASSWORD = new String(jLabel4.getText());
+        String NICKNAME = jLabel3.getText();
+        
+        StringBuilder sb = new StringBuilder();
+        
+            if(USERNAME.equals("")){
+               sb.append("chưa nhập tên đăng nhập \n");
+           }
+             if(PASSWORD.equals("")){
+               sb.append("chưa nhập mật khẩu\n");
+           }
+             if(NICKNAME.equals("")){
+                 sb.append("chưa nhập nickname \n");
+             }
+             if (sb.length()>0){
+             JOptionPane.showMessageDialog(this,sb.toString(),"Invalidation",JOptionPane.ERROR_MESSAGE);
+             return;
+             }
+    }//GEN-LAST:event_txtdangkyActionPerformed
 
     /**
      * @param args the command line arguments
