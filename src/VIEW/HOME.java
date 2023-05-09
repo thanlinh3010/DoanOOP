@@ -71,6 +71,7 @@ public class HOME extends javax.swing.JFrame {
 
         jButton5.setText("jButton5");
 
+        txtchoinhanh.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtchoinhanh.setText("TRANG CHỦ");
 
         jRadioButtonMenuItem1.setSelected(true);
@@ -142,7 +143,7 @@ public class HOME extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+                .addContainerGap(10, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(534, 534, 534))
         );
